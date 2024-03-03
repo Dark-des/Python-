@@ -1,1 +1,71 @@
+#Sınıfların tanımlanması
 
+class magaza():
+    urunler = []
+    def urun_ekle(self,ekle):
+        self.urunler.append(ekle)
+        
+class urun():      
+    def _init_(self):
+        self.satis = 0
+        self.stok = 0
+        self.indirim = 0
+        self.fiyat = 0
+    
+magaza = magaza()
+urun = urun()
+
+#Menü sayfası
+
+print ("""
+               MENÜ
+       [1]: Satış Sayfası
+       [2]: Stok Sayfası
+       [3]: Fiyat Sayfası
+       [4]: Ürün Sayfası
+       [5]: Sistemden Çıkış
+       
+       """)
+secim = int(input("Lütfen bir seçim yapınız: "))
+
+if secim==1:
+    (
+     print("""
+               SATIŞ SAYFASI
+          [A]: Satış Bilgisi Görüntüle
+          [B]: Satış Verisi Ekle
+          [C]: Satış Verisi Çıkar
+          [D]: Satış Bilgilerini Temizle
+          
+           """)
+    )
+elif secim==2:
+    (
+        print("""
+                 STOK DURUMU
+          [A]: Stok Bilgisi Görüntüle
+          [B]: Stok Verisi Ekle
+          [C]: Stok Verisi Çıkar
+          [D]: Stok Bilgilerini Temizle
+        """)
+    )    
+elif secim==3:
+    (
+        print("""
+                 FİYAT SAYFASI
+          [A]: Fiyat Bilgisi Görüntüle
+          [B]: Fiyat Verisi Ekle
+          [C]: Fiyat Verisi Çıkar
+          [D]: Fiyat Bilgilerini Temizle
+        """)
+    )   
+elif secim==4:
+    (
+        print("""
+                 ÜRÜN SAYFASI
+          [A]: Kozmetik Ürünleri
+          [B]: Çerezler
+          [C]: Elektronik Eşyalar
+          [D]: Yapı-İnşaat malzemeleri
+        """)
+    
